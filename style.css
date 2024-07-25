@@ -1,0 +1,106 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+write your CSS here */
+
+/* styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* #171D35
+    #202842
+    #744AFF */
+  --primary-color: black;
+  --secondary-color: #202842;
+  --tertiary-color: #744aff;
+  /* --quaternary-color: #744AFF; */
+}
+
+body {
+  /* font-family: Arial, sans-serif; */
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.calendar {
+  width: 23rem;
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.weekdays,
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-bottom: 1rem; */
+}
+
+.weekdays div,
+.days div {
+  width: calc(100% / 7);
+  padding: 10px 0;
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: black;
+}
+
+.day {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.prev-next-month {
+  color: rgb(148, 147, 147) !important;
+  opacity: 60%;
+}
+
+.current {
+  background-color: #744aff;
+  color: white !important;
+}
+
+.icon {
+  width: 24px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.days div:hover {
+  transition: all ease-in-out 0.2s;
+  background-color: rgb(210, 208, 208);
+}
+
+@media (max-width: 430px) {
+  .calendar {
+    width: 16rem;
+  }
+  .day {
+    font-size: 13px;
+  }
+}

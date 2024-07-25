@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Calendar</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="calendar">
+      <div class="header">
+        <button id="prev">
+          <img
+            src="./assets/previous-svgrepo-com (1).svg"
+            alt="prev icon"
+            class="icon"
+          />
+        </button>
+        <h2 id="month-year"></h2>
+        <button id="next">
+          <img
+            src="./assets/next-svgrepo-com.svg"
+            alt="prev icon"
+            class="icon"
+          />
+        </button>
+      </div>
+      <div class="weekdays">
+        <div class="day">Sun</div>
+        <div class="day">Mon</div>
+        <div class="day">Tue</div>
+        <div class="day">Wed</div>
+        <div class="day">Thu</div>
+        <div class="day">Fri</div>
+        <div class="day">Sat</div>
+      </div>
+      <div class="days" id="days"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
